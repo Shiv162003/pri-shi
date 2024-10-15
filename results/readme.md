@@ -1,3 +1,37 @@
+
+![image](https://github.com/user-attachments/assets/4403efcf-21ee-4383-b35e-00c1d886ee3c)
+![image](https://github.com/user-attachments/assets/b65e13ac-3643-4ccd-94a2-e3e136f397fc)
+
+PEGASUS performed the best among the models not just because of the scores, but due to its underlying architecture and design, which are specifically optimized for text summarization. Here’s why PEGASUS excelled:
+
+### 1. **Specialized Pre-Training Objective (Gap-Sentence Generation)**:
+   - PEGASUS uses a unique pre-training method called **gap-sentence generation**, where entire sentences are masked during training, and the model learns to predict these as summaries. This approach effectively teaches PEGASUS to understand which parts of the text are most critical and how to generate concise, informative summaries.
+   - This method aligns well with the goal of summarization, which is to identify and distill essential information, making PEGASUS particularly powerful in generating high-quality, coherent summaries.
+
+### 2. **Abstractive Summarization Capability**:
+   - Unlike models like BART, which are less specialized for summarization tasks, PEGASUS is optimized for **abstractive summarization**, where the model generates entirely new text rather than simply extracting key phrases from the input.
+   - Its architecture allows it to rephrase information while maintaining the core meaning, which is why it scored highest in both fluency and accuracy metrics (like GLEU and BLEU).
+
+### 3. **Encoder-Decoder Transformer Architecture**:
+   - PEGASUS uses an encoder-decoder architecture similar to FLAN-T5 but is specifically fine-tuned for summarization through its gap-sentence mechanism. This design allows PEGASUS to leverage the encoder to understand the context deeply and the decoder to generate precise and coherent outputs.
+   - The combination of understanding context and generating fluent, human-like summaries makes PEGASUS effective, especially when handling complex, domain-specific texts like medical articles.
+
+### 4. **Fine-Tuning on Domain-Specific Texts**:
+   - PEGASUS's adaptability to domain-specific texts (e.g., medical articles) through fine-tuning ensures it captures terminology and context-specific nuances better than more generic models like BART. This fine-tuning advantage likely contributed to its higher ROUGE-2 and ROUGE-L scores, reflecting its ability to accurately capture and generate relevant information.
+
+### Conclusion:
+PEGASUS performed the best because it combines an architecture and training strategy specifically tailored for summarization tasks. The gap-sentence generation pre-training makes it highly effective at identifying and conveying critical information, while its encoder-decoder structure enables it to generate fluent, coherent summaries. These features give it a clear edge over other models, leading to its superior performance.
+
+
+
+
+
+
+
+
+
+
+
 | Metric    | Good Score   | Average Score | Bad Score    |
 |-----------|--------------|---------------|--------------|
 | BLEU      | 0.4 - 0.6    | 0.2 - 0.4     | 0.0 - 0.2    |
