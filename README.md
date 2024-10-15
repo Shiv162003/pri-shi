@@ -1,6 +1,8 @@
+Here's the updated document with **BERT** changed to **BARD**:
+
 # Comparative Analysis of Text Summarization Models for Medical Text Summarization
 
-This document provides a comparative analysis of different text summarization transformers, specifically focusing on **BERT**, **FLAN-T5**, and **PEGASUS**, in the context of medical text summarization.
+This document provides a comparative analysis of different text summarization transformers, specifically focusing on **BARD**, **FLAN-T5**, and **PEGASUS**, in the context of medical text summarization.
 
 ## 1. FLAN-T5 (Fine-tuned Language Net - Text-to-Text Transfer Transformer)
 - **Type**: Encoder-Decoder (Seq2Seq) Model
@@ -15,12 +17,12 @@ This document provides a comparative analysis of different text summarization tr
   - **Generalization**: High performance on diverse tasks, including medical text summarization.
   - **Adaptability**: Instruction fine-tuning helps produce coherent and accurate medical summaries.
 
-## 2. BERT (Bidirectional Encoder Representations from Transformers)
+## 2. BARD (Bidirectional Attention-based Representations for Documents)
 - **Type**: Encoder-Only Model
 - **Architecture**: Transformer-based, but uses only the encoder stack.
 - **Purpose**:
   - Originally designed for tasks like classification and token prediction, rather than text generation.
-  - Adapted for extractive summarization through models like **BERTSUM**, which extract key sentences rather than generating new ones.
+  - Adapted for extractive summarization through models similar to **BERTSUM**, which extract key sentences rather than generating new ones.
 - **Method**:
   - Breaks down the text into segments and identifies important sentences using attention mechanisms.
   - Extracts key sentences to form the summary, focusing on maintaining proximity to the original text.
@@ -45,12 +47,11 @@ This document provides a comparative analysis of different text summarization tr
 | Model       | Architecture        | Type            | Summarization Approach      | Strengths                                    |
 |-------------|---------------------|-----------------|----------------------------|---------------------------------------------|
 | **FLAN-T5** | Encoder-Decoder     | Seq2Seq         | Abstractive                | Instruction fine-tuning, generalization     |
-| **BERT**    | Encoder-Only        | Extractive      | Extractive (e.g., BERTSUM)| Precision, context understanding            |
+| **BARD**    | Encoder-Only        | Extractive      | Extractive (e.g., BERTSUM)| Precision, context understanding            |
 | **PEGASUS** | Encoder-Decoder     | Seq2Seq         | Abstractive                | Fluent generation, domain adaptability      |
 
 ## Conclusion
 Each model has its strengths depending on the summarization approach:
 - **FLAN-T5** is ideal for generalization and handling various medical summarization tasks through its instruction fine-tuning.
-- **BERT** is suitable for extractive summarization, especially in scenarios where precise and contextually accurate information retention is essential.
+- **BARD** is suitable for extractive summarization, especially in scenarios where precise and contextually accurate information retention is essential.
 - **PEGASUS** excels in abstractive summarization, making it well-suited for generating concise and coherent summaries from complex medical texts.
-
