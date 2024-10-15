@@ -9,4 +9,4 @@ BARD (Bidirectional Attention-based Representations for Documents) is an advance
 - **Bidirectional Attention**: Processes the input text in both directions (forward and backward) to understand the full context, making it effective for identifying key sentences.
 - **Extractive Approach**: Selects the most relevant sentences or passages directly from the input text, ensuring the summary remains accurate and close to the original content.
 
-The image provided illustrates the architecture of BARD, showing the flow of information from the input text through the encoder, using bidirectional attention, and how it selects important sentences for summarization.
+
